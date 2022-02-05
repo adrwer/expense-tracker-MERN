@@ -9,7 +9,7 @@ export const Transaction = ({transaction}) => {
 
     return (
         <li className={borderColor}>
-            {transaction.text} <span>{sign} Kshs. {Math.abs(transaction.amount)}</span><button onClick={() => deleteTransaction(transaction.id)} className='delete-btn'>X</button>
+            {transaction.text} <span>{sign} Kshs. {Math.abs(transaction.amount)}</span><button onClick={() => deleteTransaction(transaction._id)} className='delete-btn'>X</button>
         </li>
     )
 }
